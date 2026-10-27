@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+backend/contest.db
+backend/contest.db-shm
+backend/contest.db-wal
+.env
+*.log
+backend/.token_secret

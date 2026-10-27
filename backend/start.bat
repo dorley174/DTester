@@ -12,6 +12,8 @@ if not exist .token_secret powershell -NoProfile -Command "[guid]::NewGuid().ToS
 if "%TOKEN_SECRET%"=="" set /p TOKEN_SECRET=<.token_secret
 if "%TEACHER_INVITE%"=="" set /p TEACHER_INVITE=Задай секретный код регистрации учителя: 
 if "%ALLOW_UNSAFE_RUNNER%"=="" set ALLOW_UNSAFE_RUNNER=1
+if "%CORS_ORIGINS%"=="" set /p CORS_ORIGINS=Разрешённые origin через запятую (Enter для localhost): 
+if "%CORS_ORIGINS%"=="" set CORS_ORIGINS=http://127.0.0.1:5500,http://localhost:5500
 echo.
 echo AlgoArena API: http://127.0.0.1:8000
 echo AlgoArena сайт: http://127.0.0.1:5500
